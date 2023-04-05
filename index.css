@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+
+}
+
+header{
+    height: 50px;
+    background: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+
+}
+
+#headerNavContainer{
+    display: flex;
+    max-width: 1050px;
+    background: aquamarine;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#headerNav{
+    background: lightsalmon;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#headerNav #headerNavList{
+    list-style: none;
+    padding-left: 0;
+}
+#headerNavList li{
+
+    float: left;
+    margin-inline: 10px;
+    border: 1px solid #000;
+}
+
+#headerAuth{
+    display: flex;
+
+}
+
+.carousel {
+    background-color: blanchedalmond;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    position: relative;
+  }
+  
+  .carousel .caroArrayContainer {
+    overflow: hidden;
+    position: relative; 
+    width: 100%;
+    height: 40vh;
+    background-color: #3366ff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel .caroItemContainer {
+    width: 70%;
+    top: 0;
+    background-color: brown;
+    height: 40vh;
+    margin: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel .caroItemContainer.active {
+    opacity: 1;
+  }
+  
+  .carousel .caroItemContainer .caroItem {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel .caroItemContainer .caroItem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+.aiContainer{
+    width: 90vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aiContainer .aiLogoContainer {
+    display: flex;
+    padding-block: 60px;
+}
+
+.aiContainer .positionRecc{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 90%;
+    height: 42px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-block: 25px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    
+}
+
+.positionRecc #reccStartBtn {
+    background-color: #3366ff;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+
+.positionRecc div{
+    display: flex; 
+    align-items: center;
+}
+
+#reccStartBtn #reccStartBtnTxt{
+    padding-inline: 13px;
+    padding-block: 9px;
+}
+
+#matchUpBtnContainer {
+    width: 90vw;
+    height: 42px;
+    background-color: red; 
+    padding-block: 25px;
+}
+
+.middleTwoBtnContainer{
+    list-style: none;
+    padding-left: 0;
+    
+    display: flex;
+    
+    
+}
+
+.middleTwoBtnContainer li{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.middleTwoBtnContainer #mtcMyPrf{
+    background-color: cornflowerblue;
+}
+
+.middleTwoBtnContainer #mtcMatchUp{
+    background-color: indianred;
+}
+
+.positionReccResponsiveContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-top: 30px;
+}
+
+.positionReccItemContainer{
+    width: 100%;
+    height: 30vh;
+    background-color: aqua;
+    margin-inline: 15px;
+}
+.positionReccItemContainer .positionReccItemImg{
+    width: 100%;
+}
+
+.positionReccItemContainer .positionReccItemInfo{
+    
+}
+
+@media screen and (max-width: 700px) {
+    .positionReccResponsiveContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    }
+    .positionReccItemContainer{
+        width: 100%;
+        height: 30vh;
+        background-color: aqua;
+        margin-inline: 30px;
+        margin-block: 30px;
+    }
+}
+
+
