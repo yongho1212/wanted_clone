@@ -1,55 +1,74 @@
 
 
-const slide = document.querySelector(".slideContainer")
-const slideItems = document.querySelectorAll(".slideContainer .slide-item");
-let slideWidth = slide.clientWidth;
-let arrWidth = slideItems[0].clientWidth
-let arrMargin = arrWidth/40
+let slides = document.querySelector('.slides')
+let slide = document.querySelectorAll('.slides li');
+let currIdx = 0
+let slideCnt = slide.length
+let slideWidth = 200
+let slideMargin = 30
+let nxtBtn = document.querySelector(".next")
+let prevBtn = document.querySelector(".prev")
 
-const nxtBtn = document.querySelector(".nxtBtn")
-const prevBtn = document.querySelector(".prevBtn")
-
-const maxSlide = slideItems.length
-
-// 현재 슬라이드 인덱스
-let currSlide = 1;
-
-const startSlide = slideItems[0]
-const endSlide = slideItems[maxSlide - 1]
-const startElem = document.createElement("div");
-const endElem = document.createElement("div");
 
 makeClone();
-console.log(arrWidth, arrMargin)
+// console.log(arrWidth, arrMargin)
 
 function makeClone(){
-  for ( let i = 0; i< maxSlide; i++){
-    let cloneSlide = slideItems[i].cloneNode(true)
+  for ( let i = 0; i< slideCnt; i++){
+    let cloneSlide = slide[i].cloneNode(true)
     cloneSlide.classList.add('clone')
-    slide.appendChild(cloneSlide)
+    slides.appendChild(cloneSlide)
   }
-  for ( let j = maxSlide -1 ; j>=0; j--){
-    let cloneSlide = slideItems[j].cloneNode(true)
+  for ( let j = slideCnt -1 ; j>=0; j--){
+    let cloneSlide = slide[j].cloneNode(true)
     cloneSlide.classList.add('clone')
-    slide.prepend(cloneSlide)
+    slides.prepend(cloneSlide)
   }
   updateWidth();
   setInitialPos();
+  setTimeout(function(){
+    slides.classList.add('animated')
+  },100)
+  
 }
 
 
 
 function updateWidth(){
-  let currSlides = slideItems
-  let newSlideCnt = currSlides.length
+  let currSlides = document.querySelectorAll('.slides li')
+  let newSlideCnt = currSlides.length;
 
-  let newWidth = (arrWidth + arrMargin)*newSlideCnt - arrMargin + "px";
-  slide.style.width = newWidth
+  let newWidth = (slideWidth + slideMargin)*newSlideCnt - slideMargin + "px";
+  slides.style.width = newWidth
   console.log(newWidth)
 }
 
 function setInitialPos(){
-  let initialTransLateValue = -(arrWidth + arrMargin)*(maxSlide+2) 
-  slide.style.transform = 'translateX(' +initialTransLateValue+'px)'
+  let initialTransLateValue = -(slideWidth + slideMargin) * slideCnt
+  slides.style.transform = 'translateX(' +initialTransLateValue+'px)'
   console.log(initialTransLateValue)
+}
+
+nxtBtn.addEventListener('click', function(){
+  moveSilde(currIdx + 1);  
+})
+
+prevBtn.addEventListener('click', function(){
+  moveSilde(currIdx - 1);  
+})
+
+function moveSilde(num){
+  slides.style.left = -num * (slideWidth + slideMargin)+'px';
+  currIdx = num;
+  if(currIdx == slideCnt || currIdx == -slideCnt){
+    setTimeout(function(){
+      slides.classList.remove('animated')
+      slides.style.left = '0px'
+      currIdx = 0;
+    },500)
+    setTimeout(function(){
+      slides.classList.add('animated')
+    },600)
+    
+  }
 }
