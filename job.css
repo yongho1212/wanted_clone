@@ -85,76 +85,50 @@ footer{
 
 }
 
-.slide_wrapper{
-	position: relative;
-	width: 100vw;
-	margin: 0 auto;
-	height: 40vh;
-	overflow:hidden;
-	background-color: antiquewhite;
-    
-}
-
-  .slideContainer{
-   /* display: flex;
-    flex-wrap: nowrap;
-   overflow: hidden;
-   position: relative;
-   margin-top: 30px;
-   height: 65vh;
-   width: 100%;
-   background-color: grey;
-   align-items: center; */
-   flex-direction: row;
-   display: flex;
-   padding-left: 0;
-   
-  }
-  .slide-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.carousel {
+    background-color: blanchedalmond;
+    height: 50vh;
+    width: 100vw;
+    margin-top: 30px;
+    margin-bottom: 70px;
     position: relative;
-    left: 0;
-
-    width:80vw;
-    margin-inline: 2vw;
-    flex-shrink: 0;
-    
-    transition: left 0.15s;
-    float: left;
-    
   }
-  .iOne{
-    background-color: red;
-    
-    height: 30vh;
+  
+  .carousel .caroArrayContainer {
+    overflow: hidden;
+    position: relative; 
+    width: 100%;
+    height: 40vh;
+    background-color: #3366ff;
+    display: flex;
+    justify-content: center;
   }
-  .iTwo{
-    background-color: #184CED;
-    
-    height: 30vh;
+  
+  .carousel .caroItemContainer {
+    width: 70%;
+    top: 0;
+    background-color: brown;
+    height: 40vh;
+    margin: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
   }
-  .iThree{
-    background-color: green;
-    
-    height: 30vh;
+  
+  .carousel .caroItemContainer.active {
+    opacity: 1;
   }
-  .iFour{
-    background-color: #fff;
-    
-    height: 30vh;
+  
+  .carousel .caroItemContainer .caroItem {
+    height: 100%;
+    width: 100%;
   }
-  .iFour{
-    background-color: #000;
-    
-    height: 30vh;
+  
+  .carousel .caroItemContainer .caroItem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
-
-
-
-
 
 
 

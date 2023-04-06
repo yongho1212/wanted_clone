@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./job.css">
 </head>
 
 <body>
@@ -62,49 +62,47 @@
         <!--    메인 컨텐츠-->
         <main>
             <!-- carousel-->
-            <div class="slide_wrapper">
-                <ul class="slideContainer">
-                    <!-- 이전 슬라이드 아이템 -->
-                    <li class="slide-item iOne">1번</li>
-              
-                    <!-- 현재 슬라이드 아이템 -->
-                    <li class="slide-item iTwo">2번</li>
-              
-                    <!-- 다음 슬라이드 아이템 -->
-                    <li class="slide-item iThree">3번</li>
-    
-                    <!-- 다음 슬라이드 아이템 -->
-                    <li class="slide-item iFour">4번</li>
-                    <!-- 다음 슬라이드 아이템 -->
-                    <li class="slide-item iFive">5번</li>
-              
-                    
-                </ul>
+            <div class="carousel">
+                <!-- carousel array -->
+                <div class="caroArrayContainer">
+                    <!-- carousel itme 1 -->
+                    <div class="caroItemContainer active">
+                        <div class="caroItemContent">
+                            Caro 1 Contents
+                        </div>
+                        <div class="caroItemTxt">
+                            Caro 1 TXT
+                        </div>
+                    </div>
+                    <!-- carousel itme 2 -->
+                    <div class="caroItemContainer">
+                        <div class="caroItemContent">
+                            Caro 2 Contents
+                        </div>
+                        <div class="caroItemTxt">
+                            Caro 2 TXT
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-              <div>
-                <!-- 왼쪽 화살표 -->
-                <div class="nxtBtn">&#10094;</div>
-          
-                <!-- 오른쪽 화살표 -->
-                <div class="prevBtn">&#10095;</div>
-              </div>
             <!--    btn-->
             <div>
                 채용중인 포지션 보러가기
             </div>
-            <!--     나에게 필요한 커리어 인사이트-->
-            <article class="careerInsight">
-                <!-- TXT -->
-                <div class="careerInsightTitle">
-                    <h2>나에게 필요한 커리어 인사이트</h2>
-                    
+            <!--     wanted AI-->
+            <article class="aiContainer">
+                <!-- LOGO -->
+                <div class="aiLogoContainer">
+                    <div>LOGO</div>
+                    <img src="assets/ai.png" width="170px">
                 </div>
 
-                <!-- Category Slide -->
-                <div>
-                    
-                </div>
+                <!-- Announce -->
+                <h2>
+                    <img src="assets/ai.png" width="114px">
+                    <span>가 제안하는 합격률 높은 포지션</span>
+                </h2>
                 <!-- 포지션 추천 안내 -->
                 <div class="positionRecc">
                     <div>

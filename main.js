@@ -1,81 +1,55 @@
 
-     const caroItems = document.querySelectorAll('.caroItemContainer');
-     const caroItemActiveClass = 'active';
- 
-     let activeIndex = 0;
-     const changeActiveIndex = (increment) => {
-       activeIndex += increment;
-       if (activeIndex >= caroItems.length) {
-         activeIndex = 0;
-       } else if (activeIndex < 0) {
-         activeIndex = caroItems.length - 1;
-       }
-     };
- 
-     const updateCarousel = () => {
-       caroItems.forEach((caroItem, index) => {
-         if (index === activeIndex) {
-           caroItem.classList.add(caroItemActiveClass);
-         } else {
-           caroItem.classList.remove(caroItemActiveClass);
-         }
-       });
-     };
- 
-     const prevButton = document.createElement('button');
-     prevButton.textContent = 'Prev';
-     prevButton.addEventListener('click', () => {
-       changeActiveIndex(-1);
-       updateCarousel();
-     });
-     const nextButton = document.createElement('button');
-     nextButton.textContent = 'Next';
-     nextButton.addEventListener('click', () => {
-       changeActiveIndex(1);
-       updateCarousel();
-     });
- 
-     const caroArrayContainer = document.querySelector('.caroArrayContainer');
-     caroArrayContainer.appendChild(prevButton);
-     caroArrayContainer.appendChild(nextButton);
- 
-     updateCarousel();
-     setInterval(() => {
-       changeActiveIndex(1);
-       updateCarousel();
-     }, 4000);
+
+const slide = document.querySelector(".slideContainer")
+const slideItems = document.querySelectorAll(".slideContainer .slide-item");
+let slideWidth = slide.clientWidth;
+let arrWidth = slideItems[0].clientWidth
+let arrMargin = arrWidth/40
+
+const nxtBtn = document.querySelector(".nxtBtn")
+const prevBtn = document.querySelector(".prevBtn")
+
+const maxSlide = slideItems.length
+
+// 현재 슬라이드 인덱스
+let currSlide = 1;
+
+const startSlide = slideItems[0]
+const endSlide = slideItems[maxSlide - 1]
+const startElem = document.createElement("div");
+const endElem = document.createElement("div");
+
+makeClone();
+console.log(arrWidth, arrMargin)
+
+function makeClone(){
+  for ( let i = 0; i< maxSlide; i++){
+    let cloneSlide = slideItems[i].cloneNode(true)
+    cloneSlide.classList.add('clone')
+    slide.appendChild(cloneSlide)
+  }
+  for ( let j = maxSlide -1 ; j>=0; j--){
+    let cloneSlide = slideItems[j].cloneNode(true)
+    cloneSlide.classList.add('clone')
+    slide.prepend(cloneSlide)
+  }
+  updateWidth();
+  setInitialPos();
+}
 
 
 
-// const caro = document.querySelector('.carousel');
-// const caroArr = caro.querySelector('.carouselArrayContainer');
-// const caroItem = caro.querySelectorAll('.caroItemContainer');
+function updateWidth(){
+  let currSlides = slideItems
+  let newSlideCnt = currSlides.length
 
-// const addActive = (itm) => {
-//   itm.classList.add('active');
-// };
+  let newWidth = (arrWidth + arrMargin)*newSlideCnt - arrMargin + "px";
+  slide.style.width = newWidth
+  console.log(newWidth)
+}
 
-// const removeActive = (itm) => {
-//   itm.classList.remove('active');
-// };
-
-// const slider = () => {
-//   let activeIndex = Array.from(caroItem).findIndex(item => item.classList.contains('active'));
-//   removeActive(caroItem[activeIndex]);
-//   caroItem[activeIndex].removeAttribute('style');
-  
-//   if (activeIndex === caroItem.length - 1) {
-//     activeIndex = 0;
-//   } else {
-//     activeIndex += 1;
-//   }
-  
-//   addActive(caroItem[activeIndex]);
-//   caroItem[activeIndex].style.zIndex = 100;
-// };
-
-// window.onload = () => {
-//   addActive(caroItem[0]);
-//   setInterval(slider, 4000);
-// };
-
+function setInitialPos(){
+  let initialTransLateValue = -(arrWidth + arrMargin)*(maxSlide+2) 
+  slide.style.transform = 'translateX(' +initialTransLateValue+'px)'
+  console.log(initialTransLateValue)
+}
