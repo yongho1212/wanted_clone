@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wanted</title>
+    <link rel="stylesheet" href="./develop.css">
+</head>
+
+<body>
+    <div>
+        <!--헤더-->
+        <header>
+            <nav id="headerNavContainer">
+                <!-- 헤더좌측 로고 / 드로어-->
+                <div id="headerLogo">
+                    <div id="logoDrawer">
+                        <img src="./assets/hamberger menu.png" style="margin-top: 5px;">
+                        <!-- drawer Contents -->
+                        <div class="drawerContainer">
+                            <ul>
+                                <li>직군전체</li>
+                                <li>개발</li>
+                                <li>경영 비즈니스</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <a href="./index.html"><img src='./assets/wantedtextlogo.svg' width="90px"></a>
+
+
+                    </div>
+
+
+                </div>
+                <!-- 헤더 중앙 네브-->
+                <div id="headerNav">
+                    <ul id="headerNavList">
+                        <li><a href="./job.html">채용</a></li>
+                        <li>이벤트</li>
+                        <li>직군별 연봉</li>
+                        <li>이력서</li>
+                        <li>커뮤니티</li>
+                        <li>프리랜서</li>
+                        <li>AI 합격예측</li>
+                    </ul>
+                </div>
+                <!-- 헤더 우측 로그인 기업서비스-->
+                <div id="headerAuth">
+                    <div style="font-weight: 500; font-size: 15px; margin-inline: 7px;">
+                        🔍 회원가입/로그인
+                    </div>
+                    <hr style="height: 30px;">
+                    <div style="font-weight: 500; 
+                        font-size: 13px; 
+                        margin-inline: 7px;
+                        color: grey;
+                        border: 1px solid grey;
+                        padding: 5px 7px;
+                        border-radius: 20px;
+                        
+                    ">
+                        기업 서비스
+                    </div>
+                </div>
+
+
+
+            </nav>
+
+        </header>
+        <!--    메인 컨텐츠-->
+        <main>
+            <!-- 검색 filter -->
+            <div class="searchFilterContainer">
+                <!-- row1 -->
+                <div class="firstrowFilter">
+                    <button class="frToggleBtn">
+                        <span>개발</span>
+                        <img src="./assets/down.svg" class="downBtn">
+                    </button>
+                    
+                    <button class="frSearchBtn">
+                        <span>개발 전체</span>
+                        <img src="./assets/down.svg" class="downBtn">
+                    </button>
+                </div>
+                <!-- row2 -->
+
+                <!-- TOGGLE CONTAINER -->
+                <div class="toggleFilter">
+                    <!-- LEFT TOGGLE CONTAINER  -->
+                    <div>
+                        <button class="toggleBtn" id="toggleBtnFirst">
+                            <span class="toggleBtnNormal">지역</span>
+                            <span class="toggleBtnBlue">한국</span>
+                            <div id="bedgeCnt">1</div>
+                        </button>
+                        <button class="toggleBtn">
+                            <span>경력</span>
+                            <span class="toggleBtnBlue">전체 ▾</span>
+                        </button>
+                        <button class="toggleBtn">기술스택 ▾</button>
+                    </div>
+
+                    <button class="toggleBtn">응답률순 ▾</button>
+                </div>
+                <hr>
+                <!-- row3 -->
+                <div class="themeFilter">
+                    <!-- wrapper conatainer -->
+                    <div class="themeWrapperContainer">
+                        <!-- objs -->
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">연봉이 최고의 복지</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">재택근무</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">퇴사율 10% 이하</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">급성장 중</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">병역특례</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">연봉이 최고의 복지</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">재택근무</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">퇴사율 10% 이하</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">급성장 중</span>
+                        </div>
+                        <div class="themeSelectBox">
+                            <span class="themeSelectTxt">병역특례</span>
+                        </div>
+                        
+                        <img 
+                        src="./assets/right.svg"
+                        id="rightSlideBtn"
+                        >
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <!-- 북마크 모아보기 -->
+            <div class="bookmarkTxt">
+                <div class="bookmarkTxtBlue">
+                    <img src="./assets//bluebookmark.svg">
+                    <span class="blueTxt">북마크 모아보기 ></span>    
+                
+                </div>
+                <h3>적극 채용중인회사</h3>
+            </div>
+            <!-- 5개 -->
+            <div class="hiringCompanyCtnr">
+                <a class="hcLink">
+                    <div class="hclItem">
+                        <img src="./assets/five/웅진.png" class="hcliMainImg">
+                        <img src="./assets/five/웅진로고.png" class="hcliSubImg">
+                        <div class="hcliTxtCtrn">
+                            <h4 class="hcliCompanyName"> 웅진</h4>
+                            <h5 class="hcliPositionCnt">5개 포지션</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="hcLink">
+                    <div class="hclItem">
+                        <img src="./assets/five/다큐브.png" class="hcliMainImg">
+                        <img src="./assets/five/다큐브로고.png" class="hcliSubImg">
+                        <div class="hcliTxtCtrn">
+                            <h4 class="hcliCompanyName"> 다큐브</h4>
+                            <h5 class="hcliPositionCnt">5개 포지션</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="hcLink">
+                    <div class="hclItem">
+                        <img src="./assets/five/스와치.png" class="hcliMainImg">
+                        <img src="./assets/five/스와치로고.png" class="hcliSubImg">
+                        <div class="hcliTxtCtrn">
+                            <h4 class="hcliCompanyName"> 스와치</h4>
+                            <h5 class="hcliPositionCnt">5개 포지션</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="hcLink">
+                    <div class="hclItem">
+                        <img src="./assets/five/키아이.png" class="hcliMainImg">
+                        <img src="./assets/five/키아이로고.png" class="hcliSubImg">
+                        <div class="hcliTxtCtrn">
+                            <h4 class="hcliCompanyName"> 키아이</h4>
+                            <h5 class="hcliPositionCnt">5개 포지션</h5>
+                        </div>
+                    </div>
+                </a>
+                <a class="hcLink">
+                    <div class="hclItem">
+                        <img src="./assets/five/플레어.png" class="hcliMainImg">
+                        <img src="./assets/five/플레어로고.png" class="hcliSubImg">
+                        <div class="hcliTxtCtrn">
+                            <h4 class="hcliCompanyName"> 플레어</h4>
+                            <h5 class="hcliPositionCnt">5개 포지션</h5>
+                        </div>
+                    </div>
+                </a>
+
+            </div>>
+
+            <!-- 4 * 3  -->
+            <div class="hiringContainer">
+                <ul class="hiringUl">
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li class="hiringLi">
+                        <div class="hiringBoxContainer">
+                            <!-- 저장하기 버튼 -->
+                            <img src="./assets/bookmark.svg" width="30px" class="bookMark">
+                            <!-- 이미지 -->
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F4667%2F3jnarfzlkzmpq6qe__1080_790.jpg&w=520&q=100""
+                                class="hiringBoxImg">
+
+                            <!-- 하단 컨테이너 -->
+                            <div class="hiringBoxInfo">
+                                <!-- 포지션 & 정보-->                        
+                                <span class='hbiPosition'>
+                                    백엔드 개발자
+                                </span>
+                                <span class='hbiCompany'>
+                                    롱기스트
+                                </span>    
+                                <div class='hbiBadge'>
+                                    응답률 매우 뫂음
+                                </div>
+                                <span class='hbiLocation'>
+                                    서울 한국
+                                </span>
+                                <span class='hbiReward'> 채용 보상금 1,000,000원</span>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 내 유형과 가장 어울리는 회사는 -->
+
+            <!-- 4 * ()() -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 요즘 뜨는 포지션  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     -->
+    <div class="typeTestContainer">
+        <div class="typeTestTxt">
+            <span class="txt1">내 유형과 가장 어울리는 회사는?</span>
+            <span class="txt2">유형테스트 하러가기 ></span>
+        </div>
+        <img src="./assets/typeTest.png" class="typeTestImg">
+    </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="index.html"><img src="./assets/wanted_logo.png">wanted</a>
+            <a>기업소개</a>
+            <a>이용약관</a>
+            <a>고객센터</a>
+            <a>개인정보 처리방침</a>
+        </div>
+        <div>
+
+        </div>
+        </div>
+    </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

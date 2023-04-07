@@ -1,23 +1,31 @@
-body {
-    margin: 0;
+*{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
 
+body {
+    margin: 0
 }
 
 
 header{
     height: 50px;
-    background: bisque;
+    /* background: bisque; */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 100;
+    width: 100vw;
+    border-bottom: 1px solid grey;
 
 }
 
 #headerNavContainer{
     display: flex;
     max-width: 1050px;
-    background: aquamarine;
+    
     height: 100%;
     width: 100%;
     align-items: center;
@@ -62,7 +70,7 @@ footer{
 }
 
 #headerNav{
-    background: lightsalmon;
+    
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -78,11 +86,14 @@ footer{
     float: left;
     padding-inline: 10px;
     margin-inline: 5px;
-    border: 1px solid #000;
+    font-size: 14px;
+    font-weight: 570;
+   
 }
 
 #headerAuth{
     display: flex;
+    align-items: center;
 
 }
 
@@ -197,7 +208,7 @@ footer{
       flex-direction: column;
       align-items: center;
       width: 90vw;
-      background-color: #184CED;
+      
   }
 
 
@@ -246,7 +257,7 @@ footer{
 
 .insightWrapperItem .insightImgBox{
     overflow: hidden;
-    ;
+    
 }
 
 .insightImgBox .insightImg{
@@ -277,29 +288,13 @@ footer{
     padding-block: 60px;
 }
 
-.aiContainer .positionRecc{
-    display: flex;
-    justify-content: space-between;
-    
-    width: 90%;
-    height: 42px;
-    background-color: aquamarine;
-    border-radius: 30px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-block: 25px;
-    margin-top: 10px;
-    margin-bottom: 35px;
-    
-}
 
-.positionRecc #reccStartBtn {
-    background-color: #3366ff;
-    color: #fff;
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 20px;
-    border: none;
+#companyTypeTest {
+    width: 90vw;
+
+    height: 46px;
+    background-color: #184CED;
+    margin-top: 30px;
 }
 
 .positionRecc div{
