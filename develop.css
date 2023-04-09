@@ -90,10 +90,10 @@ main{
 
 /* ========== FIRST ROW ========== */
 .searchFilterContainer{
-    height: 35vh;
     
     width: 90vw;
     margin-top: 30px;
+    margin-bottom: 10px;
     
 }
 
@@ -147,6 +147,8 @@ main{
 
 /* ========== SECOND ROW ========== */
 
+
+
 .searchFilterContainer .toggleFilter{
     display: flex;
     
@@ -195,39 +197,55 @@ main{
 
 
 /* ========== THIRD ROW ========== */
-.searchFilterContainer .themeFilter{
-    /* display: flex; */
-    
-    margin-block: 20px;
-    
-}
-.searchFilterContainer .themeFilter .themeWrapperContainer{
-    display: flex;
-    flex-direction: row;
-}
+
+
 
 
 .themeFilter{
-
+	position: relative;
+	width: 90vw;
+	margin: 0 auto;
+	overflow:hidden;
+    height: 50px;
+    margin-top: 10px;
+    
+    
+    
+    
+    
 }
 
 .themeWrapperContainer{
-    position: relative;
-    overflow: hidden;
-
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    /* 메모 */
+    white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -60px;
 }
 
 .themeSelectBox{
     background-color: pink;
-    padding: 7px 9px ;
+    padding: 3px 9px ;
     margin-inline: 3px;
     border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
 }
 
 .themeSelectTxt{
     font-size: 13px;
     color: #333333;
 }
+
 #rightSlideBtn{
     position: absolute;
     background-color: #fff;
@@ -235,7 +253,12 @@ main{
     border: 1px solid gray;
     border-radius: 100px;
     right: 0px;
+    top: 8px;
 }
+
+
+
+
 
 
 
@@ -626,4 +649,43 @@ justify-content: space-around;
 
 footer{
     height: 35vh;
+}
+
+
+.footerTopContainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    
+}
+
+.footerTopLeftContainer{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopLeftLogo{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopLeftNav a{
+    margin-inline: 15px;
+
+}
+
+.footerTopRightContainer{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopRightContainer a{
+    margin-inline: 5px;
+}
+
+.footerBussinessInfoContainer{
+    margin-left: 5vw;
+    color: grey;
 }

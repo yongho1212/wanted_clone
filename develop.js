@@ -1,12 +1,12 @@
 
 
-let slides = document.querySelector('.slides')
-let slide = document.querySelectorAll('.slides li');
+let slides = document.querySelector('.themeWrapperContainer')
+let slide = document.querySelectorAll('themeSelectBox');
 let currIdx = 0
 let slideCnt = slide.length
 let slideWidth = 200
 let slideMargin = 30
-let nxtBtn = document.querySelector(".next")
+let nxtBtn = document.querySelector("#rightSlideBtn")
 let prevBtn = document.querySelector(".prev")
 
 
