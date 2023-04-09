@@ -8,6 +8,7 @@ let slideWidth = 200
 let slideMargin = 30
 let nxtBtn = document.querySelector(".next")
 let prevBtn = document.querySelector(".prev")
+let letMainCategoryNextBtn =  document.querySelector('#rightSlideBtnMain')
 
 
 makeClone();
@@ -55,14 +56,24 @@ function setInitialPos(){
   slides.style.transform = 'translateX(' +initialTransLateValue+'px)'
   console.log(initialTransLateValue)
 }
-
+// 다음버튼
 nxtBtn.addEventListener('click', function(){
   moveSilde(currIdx + 1);  
 })
 
+// letMainCategoryNextBtn.addEventListener('click', function(){
+//   moveSilde(currIdx + 1);  
+// })
+
+// 이전버튼
 prevBtn.addEventListener('click', function(){
   moveSilde(currIdx - 1);  
 })
+
+// 자동 슬라이드
+setInterval(function(){
+  moveSilde(currIdx + 1); 
+},4000)
 
 function moveSilde(num){
   let slWidth = window.innerWidth*0.7

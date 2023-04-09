@@ -232,19 +232,50 @@ footer{
       margin-top: 70px;
       
   }
+  .categoryWrapper {
+    position: relative;
+	width: 80vw;
+	margin: 0 auto;
+	overflow:hidden;
+    height: 50px;
+    margin-top: 10px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    
+  }
 
 
   .categoryList{
-      list-style: none;
+    list-style: none;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    margin-left: -30px;
+    
   }
+
   .categorItem{
-      float: left;
-      padding: 3px 7px;
+      
+      padding: 7px 15px;
       border: 1px solid lightslategray;
       border-radius: 20px;
       margin-inline: 7px;
       color: grey;
+
   }
+
+  #rightSlideBtnMain{
+    position: absolute;
+    background-color: #fff;
+    padding: 3.8px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    right: 0px;
+    top: 8px;
+    cursor: pointer;
+}
 
   .insightWrapperContainer{
       width: 100%;
@@ -431,15 +462,18 @@ font-size: 19px;
 }
 
 
-#companyTypeTest {
-    width: 90vw;
-
-    height: 46px;
+.postionRecc {
+    width: 80vw;
+    height: 55px;
     background-color: #184CED;
     margin-top: 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-.positionRecc div{
+#postionRecc div{
     display: flex; 
     align-items: center;
 }
@@ -609,6 +643,7 @@ font-size: 19px;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
+    margin-block: 80px;
 }
 
 .hierInfoContainer ul{
@@ -633,6 +668,21 @@ font-size: 19px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.careerFourBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.careerFourBtn > span{
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.careerFourBtn > svg{
+    margin-bottom: 10px;
 }
 
 

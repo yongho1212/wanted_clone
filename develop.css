@@ -91,7 +91,7 @@ main{
 /* ========== FIRST ROW ========== */
 .searchFilterContainer{
     
-    width: 90vw;
+    width: 80vw;
     margin-top: 30px;
     margin-bottom: 10px;
     
@@ -203,16 +203,11 @@ main{
 
 .themeFilter{
 	position: relative;
-	width: 90vw;
+	width: 80vw;
 	margin: 0 auto;
 	overflow:hidden;
     height: 50px;
     margin-top: 10px;
-    
-    
-    
-    
-    
 }
 
 .themeWrapperContainer{
@@ -267,7 +262,7 @@ main{
 .bookmarkTxt{
     margin-top: 30px;
     display: flex;
-    width: 90vw;
+    width: 80vw;
     flex-direction: column;
 }
 
@@ -299,13 +294,13 @@ main{
 .hiringCompanyCtnr{
     display: flex;
     
-    width: 90vw;
+    width: 80vw;
     justify-content: space-between; 
     height: 40vh;
 }
 
 .hcLink{
-    margin: 10px;
+    margin: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -363,7 +358,7 @@ main{
 /* 4*3 */
 
 .hiringContainer{
-width: 90vw;
+width: 80vw;
 
 }
 
@@ -453,7 +448,7 @@ justify-content: space-around;
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 90vw;
+      width: 80vw;
       
   }
 
@@ -473,7 +468,7 @@ justify-content: space-around;
 
 
 #companyTypeTest {
-    width: 90vw;
+    width: 80vw;
 
     height: 46px;
     background-color: #184CED;
@@ -491,7 +486,7 @@ justify-content: space-around;
 }
 
 #matchUpBtnContainer {
-    width: 90vw;
+    width: 80vw;
     height: 42px;
     background-color: red; 
     padding-block: 25px;
@@ -556,7 +551,7 @@ justify-content: space-around;
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    width: 90vw;
+    width: 80vw;
     margin-top: 30px;
     
 }
@@ -611,7 +606,7 @@ justify-content: space-around;
 
 
 .typeTestContainer{
-    width: 90vw;
+    width: 80vw;
     background-color: #0D99FF;
     border-radius: 10px;
     position: relative;
