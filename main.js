@@ -11,8 +11,8 @@ let prevBtn = document.querySelector(".prev")
 let letMainCategoryNextBtn =  document.querySelector('#rightSlideBtnMain')
 
 let detailImgContainer = document.getElementsByClassName('.wrapperContainer')
-let detailImgScrollContainer = document.querySelector('.imgContainer')
 
+let ContainerElement = document.querySelector('.imgContainer')
 
 
 makeClone();
@@ -103,11 +103,14 @@ function moveSilde(num){
 }
 
 function getScrollPos(){
-  let ContainerElement = document.querySelector('.imgContainer')
+  
   let x = ContainerElement.scrollLeft
   console.log(x)
+  console.log(ContainerElement.scrollWidth)
+  
 }
 
-detailImgScrollContainer.addEventListener('scroll',function(){
-  console.log(this.scrollLeft)
-})
+function changeScrollX(e){
+  ContainerElement.scrollLeft = Number(e)
+}
+

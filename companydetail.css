@@ -84,37 +84,163 @@ header{
 
 main{
     height: 100%;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
 }
+
+.mainbody{
+    
+    display: flex;
+    width: 80vw;
+    margin-top: 50px;
+    
+
+}
+.mainLeft{
+    flex: 2;
+    /* background-color: aqua; */
+}
+
 
 .wrapperContainer{
     position: relative;
     /* width: 100vw; */
-    height: 400px;
+    height: 470px;
     
     
 }
 
 .imgContainer{
     position: absolute;
-    overflow: scroll;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
     left: 0;
     top: 0;
-    width: 400px;
-    height: 400px;
-    background-color: red;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
     display: flex;
     flex-direction: row;
+    scroll-snap-type: x mandatory;
+    scroll-margin: 100px; 
+    
     
     
 }
 
+
 .imgItem{
-    width: 400px;
+    width: 100%;
+    height: 100%;
     /* 이거 뭔지 확실히 */
     flex-shrink: 0;
+    scroll-snap-align: center;
 }
 
 .imgs{
     width: 100%;
+    
+}
+
+.mainInfoContainer{
+    margin-top: 50px;
+    
+    width: 100%;
+}
+
+
+.mainRight{
+    flex: 1;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.applyContainer {
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    position:fixed;
+    z-index: 100;
+    padding: 15px;
+    
+}
+
+.applyFirstRow{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.applyFirstRow > button{
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+.applySecondRow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.applySecondRow > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.applyThirdRow{
+    margin-top: 20px;
+}
+.applyThirdRow > button{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 2px solid #3366FF;
+    color: #3366FF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applyFourthRow{
+    margin-top: 10px;
+}
+
+.applyFourthRow > button{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: #3366FF;
+    color: #FFF;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.applyFifthRow{
+    margin-top: 20px;
+}
+
+.applyFifthRow > button{
+    width: 70px;
+    padding-block: 3px;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+}
+
+.locationContainer{
+    margin-top: 70px;
 }
