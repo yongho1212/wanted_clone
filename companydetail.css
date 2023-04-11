@@ -1,0 +1,120 @@
+*{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
+
+body {
+    margin: 0
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100vw;
+    border-bottom: 1px solid grey;
+}
+
+#headerNavContainer{
+    display: flex;
+    max-width: 1050px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+#headerLogo{
+    display: flex;
+    flex-direction: row;
+}
+
+#logoDrawer {
+    cursor: pointer;
+}
+ #logoDrawer:hover .drawerContainer{
+    visibility: visible;
+}
+
+#headerLogo .drawerContainer{
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    top: 35px;
+    visibility:hidden
+}
+#headerLogo .drawerContainer ul{
+    list-style: none;
+}
+#headerLogo .drawerContainer ul li {
+    margin-bottom: 5px;
+}
+
+
+#headerNav{
+    
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#headerNav #headerNavList{
+    list-style: none;
+    padding-left: 0;
+    
+}
+#headerNavList li{
+
+    float: left;
+    padding-inline: 10px;
+    margin-inline: 5px;
+    font-size: 14px;
+    font-weight: 570;
+   
+}
+
+#headerAuth{
+    display: flex;
+    align-items: center;
+
+}
+
+main{
+    height: 100%;
+    width: 80vw;
+}
+
+.wrapperContainer{
+    position: relative;
+    /* width: 100vw; */
+    height: 400px;
+    
+    
+}
+
+.imgContainer{
+    position: absolute;
+    overflow: scroll;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.imgItem{
+    width: 400px;
+    /* 이거 뭔지 확실히 */
+    flex-shrink: 0;
+}
+
+.imgs{
+    width: 100%;
+}
