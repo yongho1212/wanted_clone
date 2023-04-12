@@ -9,17 +9,10 @@ let slideMargin = 30
 let nxtBtn = document.querySelector(".next")
 let prevBtn = document.querySelector(".prev")
 let letMainCategoryNextBtn =  document.querySelector('#rightSlideBtnMain')
-
-
-
+let loginBtn = document.getElementById('headerAuthLogin')
+let closeModal = document.getElementById('modalCloseBtn')
 
 makeClone();
-console.log(window.innerWidth )
-
-
-
-
-
 
 function makeClone(){
   
@@ -100,3 +93,18 @@ function moveSilde(num){
   }
 }
 
+loginBtn.addEventListener('click', ()=>{
+  let modalCtn = document.getElementById('modalContainer')
+  let modaldp = modalCtn.style.display
+  if (modaldp == '' || modaldp == 'none'){
+    modalCtn.style.display = 'block'
+  }
+})
+
+closeModal.addEventListener('click', () => {
+  let modalCtn = document.getElementById('modalContainer')
+  let modaldp = modalCtn.style.display
+  if (modaldp == 'block'){
+    modalCtn.style.display = 'none'
+  }
+})

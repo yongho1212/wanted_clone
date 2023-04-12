@@ -99,6 +99,58 @@ footer{
 
 }
 
+#headerAuthLogin{
+    font-weight: 500; 
+    font-size: 15px; 
+    margin-inline: 7px; 
+    margin-right: 20px;
+    background-color: #fff;
+    border:none;
+    cursor: pointer;
+}
+
+#modalContainer{
+    z-index: 100;
+    position: absolute;
+    
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    display: none;
+    width: 400px;
+    height: 800px;
+    
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginContainer h1, h2{
+    margin: 0;
+}
+
+.modalTop{
+    align-self:flex-end;
+    margin: 10px;
+}
+
+#modalCloseBtn{
+    background-color: #fff;
+    border: none;
+    padding: 0;
+}
+
+.modalLogo{
+    width: 100px;
+}
+
+
+
+
 
 .slide_wrapper{
 	position: relative;
@@ -124,6 +176,7 @@ footer{
     background-color: red;
     
 }
+
 .slides li:not(:last-child){	
 	margin-right: 30px;
 }
