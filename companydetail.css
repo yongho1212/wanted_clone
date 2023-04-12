@@ -244,3 +244,158 @@ main{
 .locationContainer{
     margin-top: 70px;
 }
+.mainInfoContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainInfoTitleInfo{
+    margin-bottom: 20px;
+    
+}
+
+.infocompany{
+
+}
+
+.infocompany .cn{
+font-weight: bold;
+font-size: 15px;
+}
+
+.infocompany .cl{
+color: #ccc;
+font-size: 13px;
+}
+
+.infotags{
+
+}
+
+.infotagsUl{
+    list-style: none;
+    padding-left: 0px;
+    
+}
+
+.ingotagsLi{
+    float: left;   
+    background-color: #ccc;
+    font-size: 13px;
+    padding: 5px 6px;
+    border-radius: 30px;
+    margin-inline: 5px;
+    cursor: pointer;
+}
+
+.detailTxtContainer{
+    margin-top: 50px;
+    color:gray
+}
+
+.techStack{
+    background-color: #E4F4EC;
+    padding: 6px;
+    margin-inline: 5px;
+    border-radius: 20px;
+    color: #333;
+}
+
+.locationContainer{
+
+}
+
+.lcic{
+    display: flex;
+    margin-block: 20px;
+}
+
+.lcl{
+    color:#aaa;
+    width: 80px;
+    font-size: 16px;
+    
+    
+}
+.lcc{
+    color: #333;
+    font-size: 16px;
+}
+
+.twoBtn{
+    margin-top: 50px;
+}
+
+.btn1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+
+}
+
+.btnLogo{
+    width: 55px;
+}
+
+.btn1Left{
+    display: flex;
+    align-items: center;
+}
+
+.btn1Left div p{
+margin: 0;
+margin-block: 10px;
+margin-left: 10px;
+}
+
+.btn1Right{
+    background-color: #fff;
+    padding: 9px 17px;
+    color: #3366FF;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+
+.btn2{
+    background-color: #f8f8f8;
+    margin-top: 30px;
+   
+    
+}
+
+.btbShow{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    padding-block: 20px;
+    
+    
+}
+
+.showTxt{
+    width: 500px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+#visibleBtn{
+    background-color: #f8f8f8;
+    border: none;
+}
+
+#showContents{
+    visibility:hidden;
+    height: 0px;
+    font-size: 13px;
+    color: #666666;
+    padding: 20px;
+}
+
+.hiddenTxtContainer{
+    
+}
