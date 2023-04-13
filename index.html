@@ -8,29 +8,57 @@
 </head>
 
 <body>
+    <!-- <div>
+
+    </div> -->
     <div id="modalContainer">
         <div class="loginContainer">
             <div class="modalTop">
+                <img 
+                src="./assets/wantedtextlogo.svg" 
+                class="modalLogo"
+            >
                 <button id="modalCloseBtn">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg>
                 </button>
                 
             </div>
-            <img 
-                src="./assets/wantedtextlogo.svg" 
-                class="modalLogo"
-            >
+            
+            <div class="modalTxtCtnr">
+                <h2>직장인을 위한</h2>
+                <h2>커리어 플랫폼, 원티드!</h2>   
+    
+                <h4>커리어 성장과 행복을 위한 여정</h4>
+                <h4>지금 원티드에서 시작하세요</h4>
+            </div>
+            
+            <div class="emailCtnr">
+                <div class="inputLabel">
+                    <span>이메일</span>
+                </div>
 
-            <h1>하나의 계정으로</h1>
-            <h1>더욱 편리하게</h1>   
-
-            <h2>원티드가 제공하는 서비스를</h2>
-            <h2>하나의 계정으로 모두 이용할 수 있습니다.</h2>
-
-            <input type="email">
-            <button>이메일로 계속하기</button>
-            <p>또는</p>
+                <input type="email" class="input90" >
+                <button id="authEmailBtn">이메일로 계속하기</button>
+            </div>
+            
+            <div class="modalOtherTxt">
+                <p>또는</p>
+                <p>다른 계정으로 계속하기</p>
+            </div>
+            
             <div class="socialBtnContainer">
+                <div class = "socialBtnApple">
+                    <img src="./assets/sns/apple.png">
+                    <p>Apple</p>
+                </div>
+                <div class = "socialBtnApple">
+                    <img src="./assets/sns/apple.png">
+                    <p>Apple</p>
+                </div>
+                <div class = "socialBtnApple">
+                    <img src="./assets/sns/apple.png">
+                    <p>Apple</p>
+                </div>
                 <div class = "socialBtnApple">
                     <img src="./assets/sns/apple.png">
                     <p>Apple</p>
@@ -38,6 +66,46 @@
             </div>
         </div>
     </div>
+
+
+    <!-- 회원가입 모달 -->
+    <div id="signUpModalContainer">
+        <div class="modalTop">
+            <span class="modalLogo">회원가입</span>
+            <button id="signUpCloseBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg>
+            </button>
+            
+        </div>
+        <div class="nameCtnr">
+            <div class="inputLabel">
+                <span>이름</span>
+            </div>
+            <input type="text" class="input90" >
+        </div>
+        <div class="phoneCtnr">
+            <div class="inputLabel">
+                <span>휴대폰 번호</span>
+            </div>
+            <input type="text" class="input90 phoneInput" >
+            <div class="phoneCertificationCtnr">
+                <input type="text" class="input60" >
+                <button>
+                    인증번호 받기
+                </button>    
+            </div>
+            
+            <input type="text" class="input90 cerInput" >
+
+            <div class="inputLabel passLabel">
+                <span>비밀번호</span>
+            </div>
+            <input type="text" class="input90 passInput" >
+            
+        </div>
+
+    </div>
+
     <div>
         <!--헤더-->
         <header>

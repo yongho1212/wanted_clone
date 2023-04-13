@@ -11,6 +11,10 @@ let prevBtn = document.querySelector(".prev")
 let letMainCategoryNextBtn =  document.querySelector('#rightSlideBtnMain')
 let loginBtn = document.getElementById('headerAuthLogin')
 let closeModal = document.getElementById('modalCloseBtn')
+let signUpBtn = document.getElementById('authEmailBtn')
+let signUpCloseBtn = document.getElementById('signUpCloseBtn')
+
+
 
 makeClone();
 
@@ -106,5 +110,20 @@ closeModal.addEventListener('click', () => {
   let modaldp = modalCtn.style.display
   if (modaldp == 'block'){
     modalCtn.style.display = 'none'
+  }
+})
+
+signUpBtn.addEventListener('click', ()=>{
+  let modalCtn = document.getElementById('modalContainer')
+  let signUpCtn = document.getElementById('signUpModalContainer')
+  modalCtn.style.display = 'none';
+  signUpCtn.style.display = 'block';
+})
+
+signUpCloseBtn.addEventListener('click', () =>{
+  let signUpCtn = document.getElementById('signUpModalContainer')
+  let signdp = signUpCtn.style.display
+  if (signdp == 'block'){
+    signUpCtn.style.display = 'none'
   }
 })

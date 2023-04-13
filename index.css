@@ -112,11 +112,10 @@ footer{
 #modalContainer{
     z-index: 100;
     position: absolute;
-    
     left: 50%;
-    top: 65%;
+    top: 73%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: #fff;
     display: none;
     width: 400px;
     height: 800px;
@@ -134,20 +133,188 @@ footer{
 }
 
 .modalTop{
-    align-self:flex-end;
+    display: flex;
+    justify-content: center;
     margin: 10px;
+    position: relative;
+    
+    width: 100%;
 }
 
 #modalCloseBtn{
-    background-color: #fff;
+    
     border: none;
     padding: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    background-color: #fff;
+}
+
+.modalTxtCtnr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+.modalTxtCtnr > h2{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.modalTxtCtnr > h4{
+    margin-bottom: 3px;
+    color: grey;
 }
 
 .modalLogo{
     width: 100px;
+    align-self: center;
 }
 
+.emailCtnr{
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputLabel{
+    display: flex;
+    
+    align-self: flex-start;
+    margin-left: 5%;
+    color: grey;
+}
+
+.emailCtnr > div{
+    
+}
+
+.modalOtherTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.modalOtherTxt p{
+    margin: 0;
+}
+
+
+.socialBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.socialBtnApple{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input90{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #3366FF;
+
+}
+
+.input60{
+    width: 103%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px soild grey;
+}
+
+#authEmailBtn{
+    width: 90%;
+    background-color: #3366FF;
+    border: none;
+    color: #fff;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 28px;
+}
+
+#signUpModalContainer{
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    top: 73%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    display: none;
+    width: 400px;
+    height: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#signUpCloseBtn{
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: -8px;
+    background-color: #fff;
+}
+
+.nameCtnr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.phoneCtnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.phoneInput{
+    border: 1px solid gray;
+}
+
+.phoneCertificationCtnr{
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+}
+.phoneCertificationCtnr > button{
+    width: 130px;
+    margin-left: 10px;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 10px;
+}
+
+.cerInput{
+    border: #ccc 2px solid;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+}
+
+.passInput{
+    border: 1px solid grey;
+}
+
+.passLabel{
+    margin-top: 30px;
+}
 
 
 
