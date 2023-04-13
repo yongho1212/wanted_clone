@@ -777,3 +777,8 @@ font-size: 19px;
     margin-left: 5vw;
     color: grey;
 }
+
+@keyframes rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}

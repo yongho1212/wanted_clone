@@ -109,8 +109,27 @@ main{
     position: relative;
     /* width: 100vw; */
     height: 470px;
-    
-    
+}
+
+.moveRight{
+    z-index: 9999px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 0px;
+    height: 93%;
+    width: 35px;
+    cursor: pointer;
+}
+.moveLeft{
+    z-index: 9999px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0px;
+    height: 93%;
+    width: 35px;
+    cursor: pointer;
 }
 
 .imgContainer{
@@ -120,13 +139,23 @@ main{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
-    /* background-color: red; */
+    /* height: 100%; */
+    
     display: flex;
     flex-direction: row;
     scroll-snap-type: x mandatory;
-    scroll-margin: 100px; 
+    overscroll-behavior: contain;
+    padding-bottom: 4px;
+    /* scroll-margin: 100px;  */
 }
+/* .imgContainer::-webkit-scrollbar {
+    height: 10px;  
+    display: inline-block;
+    
+    scrollbar-color: #3366FF;
+    scrollbar-width: auto;
+    
+  } */
 
 
 .imgItem{
@@ -135,12 +164,14 @@ main{
     /* 이거 뭔지 확실히 */
     flex-shrink: 0;
     scroll-snap-align: center;
-    transition: ease-in;
-    scroll-behavior: smooth; 
+    
+    
+    
 }
 
 .imgs{
     width: 100%;
+    object-fit: fill;
     
 }
 
@@ -165,7 +196,8 @@ main{
     background-color: #fff;
     border: 1px solid #aaa;
     border-radius: 10px;
-    position:fixed;
+    position:sticky;
+    top: 50px;
     z-index: 100;
     padding: 15px;
     
