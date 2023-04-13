@@ -126,9 +126,6 @@ main{
     flex-direction: row;
     scroll-snap-type: x mandatory;
     scroll-margin: 100px; 
-    
-    
-    
 }
 
 
@@ -138,12 +135,15 @@ main{
     /* 이거 뭔지 확실히 */
     flex-shrink: 0;
     scroll-snap-align: center;
+    transition: ease-in;
+    scroll-behavior: smooth; 
 }
 
 .imgs{
     width: 100%;
     
 }
+
 
 .mainInfoContainer{
     margin-top: 50px;
@@ -160,7 +160,7 @@ main{
 }
 
 .applyContainer {
-    width: 300px;
+    width: 200px;
     height: 300px;
     background-color: #fff;
     border: 1px solid #aaa;

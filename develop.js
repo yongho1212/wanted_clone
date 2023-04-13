@@ -11,8 +11,11 @@ let btn = document.getElementById("visibleBtn");
 let showTxt = document.getElementById("showContents");
 
 let detailImgContainer = document.getElementsByClassName(".wrapperContainer");
-
 let ContainerElement = document.querySelector(".imgContainer");
+let moveLeft = document.querySelector('.moveLeft')
+let moveRight = document.querySelector('.moveRight')
+let scrollItem = document.querySelector('.imgItem')
+
 
 // window.onload = function(){
 
@@ -109,3 +112,33 @@ function getScrollPos() {
 function changeScrollX(e) {
   ContainerElement.scrollLeft = Number(e);
 }
+
+function moveSilde(){
+
+}
+
+
+let idxx = 0
+moveLeft.addEventListener('click', () =>{
+  idxx += 1;
+  // ContainerElement.scrollLeft += 595
+  ContainerElement.scrollTo({
+    top:0,
+    left: ContainerElement.scrollLeft + 595,
+    behavior:'smooth' 
+  })
+  // ContainerElement.scrollLeft = 595
+  
+})
+moveRight.addEventListener('click', () =>{
+  idxx -= 1;
+  ContainerElement.scrollTo({
+    top:0,
+    left: ContainerElement.scrollLeft - 595,
+    behavior:'smooth' 
+  })
+  // ContainerElement.scrollLeft = 595
+})
+
+
+console.log(ContainerElement.scrollWidth)
