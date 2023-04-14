@@ -30,15 +30,7 @@ class Loading extends HTMLElement{
         setTimeout(() => {
             container.style.display = 'none';
         }, 3000);
-        
-        // this.appendChild(container)
 
-        // let txt = document.createElement('div')
-        // txt.classList.add('loadingImg')
-        // txt.innerHTML = `<img src="${this.link}">`
-        // container.appendChild(txt)
-        // txt.style.transform = 'rotate(720deg)'
-        // console.log(this.link, this)
     }
 }
 customElements.define('loading-img', Loading)

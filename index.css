@@ -316,6 +316,23 @@ footer{
     margin-top: 30px;
 }
 
+.signupInfoTxt{
+    width: 90%;
+    font-size: 11px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.signUpConfirmBtn{
+    width: 90%;
+    border: none;
+    background-color: #ddd;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
 
 
 
