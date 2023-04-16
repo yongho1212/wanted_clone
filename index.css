@@ -113,12 +113,12 @@ footer{
     z-index: 100;
     position: absolute;
     left: 50%;
-    top: 73%;
+    top: 55%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     display: none;
     width: 400px;
-    height: 800px;
+    height: 600px;
     
 }
 
@@ -172,6 +172,10 @@ footer{
 .modalLogo{
     width: 100px;
     align-self: center;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: -5px;
 }
 
 .emailCtnr{
@@ -212,12 +216,16 @@ footer{
     justify-content: space-between;
     width: 80%;
     margin-top: 20px;
+    align-items: center;
 }
 
 .socialBtnApple{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80px;
+    
+    justify-content: space-between;
 }
 
 .input90{
@@ -229,10 +237,10 @@ footer{
 }
 
 .input60{
-    width: 103%;
+    width: 105%;
     height: 40px;
     border-radius: 10px;
-    border: 1px soild grey;
+    border: 1px soild #e2e2e2;
 }
 
 #authEmailBtn{
@@ -243,18 +251,21 @@ footer{
     height: 40px;
     border-radius: 30px;
     margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #signUpModalContainer{
     z-index: 100;
     position: absolute;
     left: 50%;
-    top: 73%;
+    top: 55%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     display: none;
     width: 400px;
-    height: 800px;
+    height: 600px;
     border: 1px solid #ccc;
     border-radius: 10px;
 }
@@ -286,25 +297,26 @@ footer{
 }
 
 .phoneInput{
-    border: 1px solid gray;
+    border: 1px solid #e2e2e2;
 }
 
 .phoneCertificationCtnr{
     display: flex;
-    width: 90%;
+    width: 92%;
     margin-top: 10px;
+    margin-inline: 0px;
 }
 .phoneCertificationCtnr > button{
     width: 130px;
     margin-left: 10px;
-    background-color: #d3d3d3;
+    background-color: #e2e2e2;
     border: none;
     border-radius: 10px;
 }
 
 .cerInput{
-    border: #ccc 2px solid;
-    background-color: #d3d3d3;
+    border: #e2e2e2 2px solid;
+    background-color: #e2e2e2;
     margin-top: 10px;
 }
 

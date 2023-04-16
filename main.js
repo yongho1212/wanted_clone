@@ -14,8 +14,6 @@ let closeModal = document.getElementById('modalCloseBtn')
 let signUpBtn = document.getElementById('authEmailBtn')
 let signUpCloseBtn = document.getElementById('signUpCloseBtn')
 
-
-
 makeClone();
 
 function makeClone(){
