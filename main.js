@@ -13,6 +13,8 @@ let loginBtn = document.getElementById('headerAuthLogin')
 let closeModal = document.getElementById('modalCloseBtn')
 let signUpBtn = document.getElementById('authEmailBtn')
 let signUpCloseBtn = document.getElementById('signUpCloseBtn')
+let insightItms = document.querySelectorAll('.insightWrapperItem')
+
 
 makeClone();
 
@@ -125,3 +127,16 @@ signUpCloseBtn.addEventListener('click', () =>{
     signUpCtn.style.display = 'none'
   }
 })
+
+document.querySelectorAll('.insightWrapperItem').forEach(e => {
+  e.addEventListener('mouseover', () => {
+    e.style.bottom = '10px'
+    
+  })
+});
+
+document.querySelectorAll('.insightWrapperItem').forEach(e => {
+  e.addEventListener('mouseout', () => {
+    e.style.bottom = '0px'
+  })
+});

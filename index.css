@@ -533,6 +533,7 @@ footer{
       flex-wrap: wrap;
       list-style: none;
       padding-left: 0;
+    
       
   }
 
@@ -551,6 +552,8 @@ footer{
     background-color: #fff;
     margin: 20PX;
     width: calc((100% - 160px)/4);
+    cursor: pointer;
+    
   }
 
 @media screen and (max-width: 767px){
