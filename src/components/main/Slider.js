@@ -2,7 +2,12 @@
 import Component from "../../core/Component.js";
 
 export default class Slider extends Component {
-
+  
+    // setup() {
+    //     this.state = {
+    //       slideCnt: 0
+    //     }
+    //   }
 
   template() {
     return `
@@ -128,15 +133,21 @@ export default class Slider extends Component {
   
 
   mounted() {
-    const {prevBtn, nextBtn} = this
+    
     this.slide = this.$target.querySelectorAll(".slides li");
     this.slides = this.$target.querySelector(".slides");
     this.slideCnt = this.slide.length;
     this.slideWidth = 200;
     this.slideMargin = 30;
+    this.currIdx = 0
     
     this.makeClone();
     this.setEvent();
+    this.moveSilde(this.slideCnt);
+    let _this = this
+    // setInterval(function(){
+    //     _this.moveSilde(this.currIdx + 1); 
+    //   },4000)
     
   }
 
@@ -157,9 +168,9 @@ export default class Slider extends Component {
     this.setInitialPos();
     let _this = this
     setTimeout(function () {
-        console.log(_this.slides)
         _this.slides.classList.add("animated");
     }, 100);
+    
   }
 
   updateWidth() {
@@ -181,7 +192,6 @@ export default class Slider extends Component {
     // margin 뺌
     let initialTransLateValue = -(slWidth + lefted) * this.slideCnt + this.slideMargin * 2;
     this.slides.style.transform = "translateX(" + initialTransLateValue + "px)";
-    console.log(initialTransLateValue);
   }
 
   prevBtn(){
@@ -192,8 +202,41 @@ export default class Slider extends Component {
 
   }
 
+  
+
   setEvent() {
-    this.addEvent("click", ".prev", this.prevBtn);
-  }
+    this.addEvent("click", ".prev", ({}) => {
+        
+        this.moveSilde(this.currIdx - 1);
+        console.log(this.currIdx);
+    });
+
+    this.addEvent("click", ".next", ({}) => {
+        // const currIdx = this.slideCnt;
+        this.moveSilde(this.currIdx + 1);
+        console.log(this.currIdx);
+        
+    });
+    }
+
+    moveSilde(num){
+        let slWidth = window.innerWidth*0.7
+        let lefted = window.innerWidth*0.15
+        let _this = this
+        this.slides.style.left = -num * (slWidth + this.slideMargin)+'px';
+        
+        this.currIdx = num;
+        if(this.currIdx == this.slideCnt || this.currIdx == -this.slideCnt){
+          setTimeout(function(){
+            _this.slides.classList.remove('animated')
+            _this.slides.style.left = '0px'
+            _this.currIdx = 0;
+          },500)
+          setTimeout(function(){
+            _this.slides.classList.add('animated')
+          },600)
+          
+        }
+      }
 
 }

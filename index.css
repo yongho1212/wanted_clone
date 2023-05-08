@@ -368,6 +368,7 @@ footer{
 	left:0; 
     top:0;	
     list-style: none;
+    transition: 0.5s ease-out;
 }
 .slides .animated{
 	transition: 0.5s ease-out;
