@@ -1,0 +1,686 @@
+*{
+    text-decoration: none;
+}
+a:visited{
+    color: #000;
+}
+
+body {
+    margin: 0
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 100vw;
+    border-bottom: 1px solid grey;
+}
+
+#headerNavContainer{
+    display: flex;
+    max-width: 1050px;
+    height: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+}
+#headerLogo{
+    display: flex;
+    flex-direction: row;
+}
+
+#logoDrawer {
+    cursor: pointer;
+}
+ #logoDrawer:hover .drawerContainer{
+    visibility: visible;
+}
+
+#headerLogo .drawerContainer{
+    position: absolute;
+    z-index: 100;
+    background-color: #fff;
+    top: 35px;
+    visibility:hidden
+}
+#headerLogo .drawerContainer ul{
+    list-style: none;
+}
+#headerLogo .drawerContainer ul li {
+    margin-bottom: 5px;
+}
+
+
+#headerNav{
+    
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#headerNav #headerNavList{
+    list-style: none;
+    padding-left: 0;
+    
+}
+#headerNavList li{
+
+    float: left;
+    padding-inline: 10px;
+    margin-inline: 5px;
+    font-size: 14px;
+    font-weight: 570;
+   
+}
+
+#headerAuth{
+    display: flex;
+    align-items: center;
+
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ========== FIRST ROW ========== */
+.searchFilterContainer{
+    
+    width: 80vw;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.searchFilterContainer .firstrowFilter{
+    display: flex;
+    
+}
+
+.searchFilterContainer .frToggleBtn{
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    border-right: 1px solid #aaa;
+    cursor: pointer;
+    
+}
+
+.frToggleBtn span{
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.searchFilterContainer .frSearchBtn{
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.frSearchBtn span{
+    font-size: 20px;
+    margin-right: 9px;
+    color: grey;
+}
+
+.downBtn{
+    width: 15px;
+    padding: 2px;
+    border: 1px solid gray;
+    border-radius: 100px;
+}
+
+.firstrowFilter div > span {
+    font-size: 24px;
+}
+
+/* ========== SECOND ROW ========== */
+
+
+
+.searchFilterContainer .toggleFilter{
+    display: flex;
+    
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 19px;
+    
+}
+
+.toggleFilter button{
+    padding: 7px 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-inline: 3px;
+}
+
+#toggleBtnFirst{
+    position: relative;
+}
+
+#bedgeCnt{
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    background-color: #3366FF;
+    color: #fff;
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+    padding-top: 1px;
+}
+
+.toggleBtnNormal{
+    color: #333333;
+    
+    font-size: 14px;
+}
+
+.toggleBtnBlue{
+    color: #3366FF;
+    
+    font-size: 14px;
+}
+
+
+/* ========== THIRD ROW ========== */
+
+
+
+
+.themeFilter{
+	position: relative;
+	width: 80vw;
+	margin: 0 auto;
+	overflow:hidden;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.themeWrapperContainer{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    /* 메모 */
+    white-space: nowrap;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -60px;
+}
+
+.themeSelectBox{
+    background-color: pink;
+    padding: 3px 9px ;
+    margin-inline: 3px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+
+}
+
+.themeSelectTxt{
+    font-size: 13px;
+    color: #333333;
+}
+
+#rightSlideBtn{
+    position: absolute;
+    background-color: #fff;
+    padding: 3.8px;
+    border: 1px solid gray;
+    border-radius: 100px;
+    right: 0px;
+    top: 8px;
+}
+
+
+
+
+
+
+
+
+
+.bookmarkTxt{
+    margin-top: 30px;
+    display: flex;
+    width: 80vw;
+    flex-direction: column;
+}
+
+.bookmarkTxtBlue{
+    
+    height: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.bookmarkTxtBlue > img {
+    width: 20px;
+    color: #3366FF;
+    vertical-align :middle
+    
+}
+.bookmarkTxtBlue > .blueTxt{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+    color: #3366FF;
+}
+
+
+
+
+/* 북마크 & 적극 채용중인 회사 */
+.hiringCompanyCtnr{
+    display: flex;
+    
+    width: 80vw;
+    justify-content: space-between; 
+    height: 40vh;
+}
+
+.hcLink{
+    margin: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hclItem{
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.hclItem .hcliMainImg{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.hclItem .hcliSubImg{
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    left: 5%;
+    top: 40%;
+    border: 1px solid grey;
+}
+
+.hclItem .hcliTxtCtrn{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.hcliTxtCtrn .hcliCompanyName{
+    font-weight: bold;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.hcliTxtCtrn .hcliPositionCnt{
+    margin: 0;
+    padding-top: 5px;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+/* 4*3 */
+
+.hiringContainer{
+width: 80vw;
+
+}
+
+.hiringUl{
+list-style: none;
+padding-left: 0;
+flex-wrap: wrap;
+display: flex;
+justify-content: space-around;
+}
+
+.hiringUl .hiringLi{
+    /* float: left; */
+    width: calc((100% - 100px)/4);
+    padding: 10px;
+    display: inline-block;
+    margin-block: 8px;
+}
+
+.hiringBoxContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hiringBoxContainer .bookMark{
+    position: absolute;
+    z-index: 100;
+    right: 2px;
+}
+
+.hiringBoxContainer .hiringBoxImg{
+    width: 100%;
+    flex: 5;
+}
+
+.hiringBoxContainer .hiringBoxInfo{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding-block: 14px;
+}
+
+.hbiPosition{
+    
+    color: #333333;
+    font-size: 18px;
+}
+
+.hbiCompany{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.hbiBadge{
+    font-size: 10px;
+    border: 1px solid #00AEAD;
+    color: #00AEAD;
+    width: max-content;
+    padding: 2px;
+    display: flex;
+    
+
+}
+.hbiLocation{
+    font-size: 14px;
+    margin-top: 10px;
+    color: grey;
+}
+.hbiReward{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .careerInsight{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      
+  }
+
+
+  .categoryList{
+      list-style: none;
+  }
+  .categorItem{
+      float: left;
+      padding: 3px 7px;
+      border: 1px solid lightslategray;
+      border-radius: 20px;
+      margin-inline: 7px;
+      color: grey;
+  }
+
+
+
+#companyTypeTest {
+    width: 80vw;
+
+    height: 46px;
+    background-color: #184CED;
+    margin-top: 30px;
+}
+
+.positionRecc div{
+    display: flex; 
+    align-items: center;
+}
+
+#reccStartBtn #reccStartBtnTxt{
+    padding-inline: 13px;
+    padding-block: 9px;
+}
+
+#matchUpBtnContainer {
+    width: 80vw;
+    height: 42px;
+    background-color: red; 
+    padding-block: 25px;
+}
+
+.middleTwoBtnContainer{
+    list-style: none;
+    padding-left: 0;
+    
+    display: flex;
+    
+    
+}
+
+.middleTwoBtnContainer li{
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.middleTwoBtnContainer #mtcMyPrf{
+    background-color: cornflowerblue;
+}
+
+.middleTwoBtnContainer #mtcMatchUp{
+    background-color: indianred;
+}
+
+/* 회사추천 컨테이너 */
+.recommendationContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recommendationContainer .reccTitle{
+    margin: auto;
+    text-align: center;
+    
+}
+.reccTitle div {
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.reccTitle div a{
+    font-weight: bold;
+    
+    
+}
+.reccTitle .moveToPosition{
+    color: grey;
+    
+}
+
+
+.positionReccResponsiveContainer{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 80vw;
+    margin-top: 30px;
+    
+}
+
+.positionReccItemContainer{
+    margin-inline: 15px;
+    flex: 1;
+    
+    
+}
+.positionReccItemContainer .positionReccItemImg{
+    width: 100%;
+}
+
+.positionReccItemContainer .positionReccItemInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.positionReccItemInfo .positionReccItemInfoLeft{
+    display: flex;
+}
+
+.positionReccItemInfo .followBtn{
+    background-color: #fff;
+    padding: 7px;
+    padding-inline: 11px;
+    border-radius: 17px;
+    border: 1px solid lightgrey;
+    margin-right: 3px;
+    color: #184CED;
+}
+
+@media screen and (max-width: 700px) {
+    .positionReccResponsiveContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    }
+    .positionReccItemContainer{
+        width: 100%;
+        height: 30vh;
+        background-color: aqua;
+        margin-inline: 30px;
+        margin-block: 30px;
+    }
+}
+
+
+.typeTestContainer{
+    width: 80vw;
+    background-color: #0D99FF;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    
+}
+
+.typeTestContainer .typeTestTxt{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    top: 30%;
+    justify-content: center;
+}
+.typeTestTxt .txt1{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.typeTestTxt .txt2{
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.typeTestContainer .typeTestImg{
+    height: 100px;
+    margin-left: 95px;
+    
+}
+
+
+
+
+footer{
+    height: 35vh;
+}
+
+
+.footerTopContainer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90vw;
+    
+}
+
+.footerTopLeftContainer{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopLeftLogo{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopLeftNav a{
+    margin-inline: 15px;
+
+}
+
+.footerTopRightContainer{
+    display: flex;
+    align-items: center;
+}
+
+.footerTopRightContainer a{
+    margin-inline: 5px;
+}
+
+.footerBussinessInfoContainer{
+    margin-left: 5vw;
+    color: grey;
+}

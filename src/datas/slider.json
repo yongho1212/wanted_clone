@@ -1,0 +1,60 @@
+[
+    {
+        "id" : 1,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2014%2Fc4db989b.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 2,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2002%2F68e95300.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 3,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1993%2F16ebbe65.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 4,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2011%2F982a3738.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 5,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2014%2Fc4db989b.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 1,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1975%2Fdebe424c.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 6,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F2013%2F30bd820e.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    },
+    {
+        "id" : 7,
+        "src" : "https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fbanners%2F1940%2F4a485a58.jpg&w=1060&q=100",
+        "title" : "This is Title SIR",
+        "text" : "This is TEXT SIR",
+        "link" : "www.naver.com"
+    }
+
+]
+

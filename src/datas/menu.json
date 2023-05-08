@@ -1,0 +1,110 @@
+[
+    {
+        "category": "개발",
+        "specific": [
+            "웹 개발자",
+            "서버 개발자",
+            "소프트웨어 엔지니어",
+            "프론트엔드 개발자",
+            "자바 개발자",
+            "C,C++ 개발자",
+            "파이썬 개발자",
+            "안드로이드 개발자",
+            "Node.js 개발자",
+            "iOS 개발자",
+            "DevOps / 시스템 관리자",
+            "시스템,네트워크 관리자",
+            "머신러닝 엔지니어",
+            "데이터 엔지니어",
+            "개발 매니저",
+            "기술지원",
+            "QA,테스트 엔지니어",
+            "데이터 사이언티스트",
+            "임베디드 개발자",
+            "프로덕트 매니저",
+            "보안 엔지니어",
+            "빅데이터 엔지니어",
+            "PHP 개발자",
+            "하드웨어 엔지니어",
+            "블록체인 플랫폼 엔지니어",
+            "DBA",
+            "크로스플랫폼 앱 개발자",
+            ".NET 개발자",
+            "웹 퍼블리셔",
+            "ERP전문가",
+            "영상,음성 엔지니어"
+        ]
+    },
+    {
+        "category": "경영·비즈니스",
+        "specific": []
+    },
+    {
+        "category": "마케팅·광고",
+        "specific": []
+    },
+    {
+        "category": "디자인",
+        "specific": []
+    },
+    {
+        "category": "영업",
+        "specific": []
+    },
+    {
+        "category": "고객서비스·리테일",
+        "specific": []
+    },
+    {
+        "category": "게임 제작",
+        "specific": []
+    },
+    {
+        "category": "HR",
+        "specific": []
+    },
+    {
+        "category": "엔지니어링·설계",
+        "specific": []
+    },
+    {
+        "category": "금융",
+        "specific": []
+    },
+    {
+        "category": "제조·생산",
+        "specific": []
+    },
+    {
+        "category": "의료·제약·바이오",
+        "specific": []
+    },
+    {
+        "category": "물류·무역",
+        "specific": []
+    },
+    {
+        "category": "교육",
+        "specific": []
+    },
+    {
+        "category": "법률·법집행기관",
+        "specific": []
+    },
+    {
+        "category": "식·음료",
+        "specific": []
+    },
+    {
+        "category": "건설·시설",
+        "specific": []
+    },
+    {
+        "category": "공공·복지",
+        "specific": []
+    },
+    {
+        "category": "프리랜서",
+        "specific": []
+    }
+]

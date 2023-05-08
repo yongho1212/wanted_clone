@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wanted</title>
+    <link rel="stylesheet" href="./companydetail.css">
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2hfyha1lpj"></script>
+</head>
+
+<body>
+    <div>
+        <!--헤더-->
+        <header>
+            <nav id="headerNavContainer">
+                <!-- 헤더좌측 로고 / 드로어-->
+                <div id="headerLogo">
+                    <div id="logoDrawer">
+                        <img src="./assets/hamberger menu.png" style="margin-top: 5px;">
+                        <!-- drawer Contents -->
+                        <div class="drawerContainer">
+                            <ul>
+                                <li>직군전체</li>
+                                <a href="./develop.html">
+                                    <li>개발</li>
+                                </a>
+                                <li>경영 비즈니스</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                                <li>직군전체</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <a href="./index.html"><img src='./assets/wantedtextlogo.svg' width="90px"></a>
+
+
+                    </div>
+
+
+                </div>
+                <!-- 헤더 중앙 네브-->
+                <div id="headerNav">
+                    <ul id="headerNavList">
+                        <li><a href="./job.html">채용</a></li>
+                        <li>이벤트</li>
+                        <li>직군별 연봉</li>
+                        <li>이력서</li>
+                        <li>커뮤니티</li>
+                        <li>프리랜서</li>
+                        <li>AI 합격예측</li>
+                    </ul>
+                </div>
+                <!-- 헤더 우측 로그인 기업서비스-->
+                <div id="headerAuth">
+                    <div style="font-weight: 500; font-size: 15px; margin-inline: 7px; margin-right: 20px;">
+                        🔍 회원가입/로그인
+                    </div>
+                    <hr style="height: 15px; color:grey;">
+                    <div style="font-weight: 500; 
+                        font-size: 13px; 
+                        margin-inline: 7px;
+                        color: grey;
+                        border: 1px solid grey;
+                        padding: 5px 7px;
+                        border-radius: 20px;
+                        margin-left: 20px;
+                        
+                    ">
+                        기업 서비스
+                    </div>
+                </div>
+
+
+
+            </nav>
+
+        </header>
+        <!--    메인 컨텐츠-->
+        <main>
+            <div class="mainbody">
+                <div class="mainLeft">
+                    <div class="wrapperContainer">
+                        <div class="imgContainer" onscroll="getScrollPos()">
+                            <div class="imgItem">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F20947%2Fizyvwevuqdjqkvwu__1080_790.png&w=1000&q=75"
+                                    class="imgs">
+                            </div>
+                            <div class="imgItem">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F20947%2Fgchjisbnzsrjdsdq__1080_790.png&w=1000&q=75"
+                                    class="imgs">
+                            </div>
+                            <div class="imgItem">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F20947%2Fw4uwn6jegnssmahd__1080_790.jpg&w=1000&q=75"
+                                    class="imgs">
+                            </div>
+                        </div>
+                        <button class="moveRight">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="30" height="30"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"></path></svg>
+                        </button>
+                        <button class="moveLeft">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="30" height="30"><path d="M4.7 10c-.2 0-.4-.1-.5-.2-.3-.3-.3-.8 0-1.1L6.9 6 4.2 3.3c-.3-.3-.3-.8 0-1.1.3-.3.8-.3 1.1 0l3.3 3.2c.3.3.3.8 0 1.1L5.3 9.7c-.2.2-.4.3-.6.3Z"></path></svg>
+                        </button>
+                        
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="mainInfoContainer">
+
+                        <div class="mainInfoTitleInfo">
+                            <h2>Front-end 개발자 (실무 3년 이상)</h2>
+                            <div class="infocompany">
+                                <span class="cn">카카오페이증권(kakaopay증권)</span>
+                                <span class="cl">| 경기 한국</span>
+                            </div>
+                            <!-- <div class="infotags"> -->
+                            <ul class="infotagsUl">
+                                <li class="ingotagsLi">#인원급성장</li>
+                                <li class="ingotagsLi">#301-1000명</li>
+                                <li class="ingotagsLi">#설립10년이상</li>
+                                <li class="ingotagsLi">#건강검진</li>
+                                <li class="ingotagsLi">#의료비</li>
+                                <li class="ingotagsLi">#연봉상위11-20%</li>
+                                <li class="ingotagsLi">#금융</li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="detailTxtContainer">
+                            <span>카카오페이증권은 어렵고 복잡한 투자의 문턱을 낮추고,<br>생활 속 가장 가까운 금융투자 회사를 만듭니다.<br>국내최초 테크핀 증권사에서 새로운
+                                투자문화를 함께
+                                만들어 갈 여러분을 기다립니다.</span></p>
+                            <h4>주요업무</h4>
+                            <p><span>[이 업무를 함께하게 될 거예요]<br>• 카카오페이증권의 모든 웹 프론트 개발 업무를 담당해요.</span></p>
+                            <h4>자격요건</h4>
+                            <p><span>[이런 분이 우리 크루였으면 좋겠어요]<br>• 실무 경력 3년 이상을 보유하신 분이 필요해요.<br>• React / Angular / Vue.js
+                                    등
+                                    프레임워크 활용 능력이 있으신 분이 필요해요.<br>• Single Page Application 개발 경험이 있으신 분을 찾아요.<br>•
+                                    Front-end(Javascript) 빌드 배포 경험이 있으신 분이 필요해요.<br>• HTML, CSS 등 W3C 웹 표준 규격에 대한 이해가
+                                    있으신 분을
+                                    찾아요.<br>• 다양한 분야의 사람들과 원활하게 소통하며 협업할 수 있는 분이 필요해요.<br>• 문제를 논리적이고 체계적으로 해결할 수 있는 분을
+                                    찾아요.</span></p>
+                            <h4>우대사항</h4>
+                            <p><span>[이런 분이면 바로 지원하시는 걸 추천해요]<br>• MSA기반 서비스를 개발해보신 분이면 좋아요.<br>• 대용량 트래픽 환경을 경험한 분이면
+                                    좋아요.<br>• 사용자 경험에 대해 치열하게 고민하는 분이면 좋아요.</span></p>
+                            <h4>혜택 및 복지</h4>
+                            <p><span>• 다양한 현금성 복리후생 (복지포인트 연간 360만원, 명절선물, 생일축하금, 여행지원 포인트)<br>• 자유로운 출퇴근 (선택근무제/카카오
+                                    통근버스/스마트오피스)<br>• 균형있는 삶을 위한 휴식 (안식휴가 30일, 휴가자기승인제도, 펜션/리조트 할인 및 포인트)<br>• 소중한 가족을
+                                    위한 지원
+                                    (자녀학자금, 실손의료비, 건강검진, 예방접종, 생일/출산 선물)<br>• 업무에만 집중할 수 있도록 (업무관련 교육 지원, 업무도서 지원, 영어교육
+                                    지원)<br>• 즐거운 소통 문화 (영어이름을 통한 수평커뮤니케이션, 문화데이, 캔미팅, 크루픽)</span></p>
+                            <h4>기술스택 ・ 툴</h4>
+                            <span class="techStack">Java</span><span class="techStack">Spring Boot</span>
+                        </div>
+
+
+
+                        <div class="locationContainer">
+                            <hr style="width: 100%;">
+                            <div class="lcic">
+                                <div class="lcl">마감일</div>
+                                <span class="lcc">상시</span>
+                            </div>
+                            <div class="lcic">
+                                <div class="lcl">근무지역</div>
+                                <span class="lcc">경기도 성남시 분당구 판교역로 166 카카오아지트</span>
+                            </div>
+
+                            <div id="map" style="width:100%;height:250px;margin-top: 30px;"></div>
+                            <script>
+                                let map = new naver.maps.Map('map', {
+                                    center: new naver.maps.LatLng(37.3957683, 127.1134000),
+                                    zoom: 16,
+                                })
+                                var marker = new naver.maps.Marker({
+                                    position: new naver.maps.LatLng(37.3957683, 127.1104000),
+                                    map: map
+                                });
+                                // var mapOptions = {
+                                //     center: new naver.maps.LatLng(37.3957683, 127.1135000),
+                                //     zoom: 16,
+                                //     marker
+                                // };
+
+
+
+                                // var map = new naver.maps.Map('map', mapOptions, marker);
+                            </script>
+                        </div>
+                        <div class="twoBtn">
+                            <div class="btn1">
+                                <div class="btn1Left">
+                                    <img src="https://static.wanted.co.kr/images/wdes/0_5.244779d0.jpg" class="btnLogo">
+                                    <div>
+                                        <p style="color: #000; font-weight: bold;">카카오페이증권(kakaopay증권)</p>
+                                        <p style="color: #aaa; ">금융</p>
+                                    </div>
+
+                                </div>
+
+                                <button class="btn1Right">
+                                    팔로우
+                                </button>
+                            </div>
+                            <div class="btn2">
+                                <div class="btbShow">
+                                    <div style="display: flex; align-items: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                                            height="16">
+                                            <path
+                                                d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z">
+                                            </path>
+                                        </svg>
+                                        <div class="showTxt">
+                                            본 채용정보는 원티드랩의 동의없이 무단전재, 재배포, 재가공할 수 없으며, 구직활동 이외의
+                                            용도로 사용할 수 없습니다.
+                                        </div>
+                                    </div>
+                                    <button id="visibleBtn" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12"
+                                            height="12">
+                                            <path
+                                                d="M6 8.825c-.2 0-.4-.1-.5-.2l-3.3-3.3c-.3-.3-.3-.8 0-1.1.3-.3.8-.3 1.1 0l2.7 2.7 2.7-2.7c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-3.2 3.2c-.2.2-.4.3-.6.3Z">
+                                            </path>
+                                        </svg>
+                                        
+                                    </button>
+
+
+
+                                </div>
+                                <div id="showContents">
+                                    <p class="hiddenTxtContainer">본 채용
+                                        정보는&nbsp;<strong>카카오페이증권(kakaopay증권)</strong>에서 제공한 자료를 바탕으로 원티드랩에서 표현을 수정하고 이의
+                                        배열 및 구성을 편집하여 완성한 원티드랩의 저작자산이자 영업자산입니다. 본 정보 및 데이터베이스의 일부 내지는 전부에 대하여 원티드랩의 동의
+                                        없이 무단전재 또는 재배포, 재가공 및 크롤링할 수 없으며, 게재된 채용기업의 정보는 구직자의 구직활동 이외의 용도로 사용될 수 없습니다.
+                                        원티드랩은 <strong>카카오페이증권(kakaopay증권)</strong>에서 게재한 자료에 대한 오류나 그 밖에 원티드랩이 가공하지 않은
+                                        정보의 내용상 문제에 대하여 어떠한 보장도 하지 않으며, 사용자가 이를 신뢰하여 취한 조치에 대해 책임을 지지
+                                        않습니다.&nbsp;<strong>&lt;저작권자 (주)원티드랩. 무단전재-재배포금지&gt;</strong></p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mainRight">
+                    <div class="applyContainer">
+                        <div class="applyFirstRow">
+                            <span>채용보상금</span>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                    <path
+                                        d="M15 3a3 3 0 0 1-5.175 2.066l-3.92 2.179a2.994 2.994 0 0 1 0 1.51l3.92 2.179a3 3 0 1 1-.73 1.31l-3.92-2.178a3 3 0 1 1 0-4.133l3.92-2.178A3 3 0 1 1 15 3Zm-1.5 10a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 13.5 13Zm-9-5a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 4.5 8Zm9-5a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 13.5 3Z">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="applySecondRow">
+                            <div>
+                                <span>추천인</span>
+                                <span>500,000원</span>
+                            </div>
+                            <div>
+                                <span>지원자</span>
+                                <span>500,000원</span>
+                            </div>
+                        </div>
+                        <div class="applyThirdRow">
+                            <button>
+                                <img src="./assets/bookmark.svg" style="width: 30px;">
+                                <span>북마크하기</span>
+                            </button>
+                        </div>
+                        <div class="applyFourthRow">
+                            <button>
+                                지원하기
+                            </button>
+                        </div>
+                        <div class="applyFifthRow">
+                            <button>🖤 144</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </main>
+        <hr>
+        <footer>
+            <!-- footer 상단 -->
+            <div style="width: 100%; display: flex; justify-content: center; ">
+                <div class="footerTopContainer">
+                    <!-- footer 상단 좌측 -->
+                    <div class="footerTopLeftContainer">
+                        <div class="footerTopLeftLogo">
+                            <a href="index.html"><img src="./assets/wanted_logo.png"></a>
+                            <a href="./index.html"><img src='./assets/wantedtextlogo.svg' width="90px"></a>
+
+                        </div>
+                        <div class="footerTopLeftNav">
+                            <a>기업소개</a>
+                            <a>이용약관</a>
+                            <a>고객센터</a>
+                            <a>개인정보 처리방침</a>
+                        </div>
+                    </div>
+                    <!-- footer 상단 우측 -->
+                    <div class="footerTopRightContainer">
+                        <a><img src="./assets/sns/instagram.png"></a>
+                        <a><img src="./assets/sns/youtube.png"></a>
+                        <a><img src="./assets/sns/facebook.png"></a>
+                        <a><img src="./assets/sns/blog.png"></a>
+                        <a><img src="./assets/sns/apple.png"></a>
+                        <a><img src="./assets/sns/google.png"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footerBussinessInfoContainer">
+                <p>(주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147
+                </p>
+                <p>
+                    유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 | 사업자등록번호 : 299-86-00021 | 02-539-7118
+                </p>
+                <p>© Wantedlab, Inc.
+
+                </p>
+            </div>
+
+
+
+        </footer>
+    </div>
+    <script src="./develop.js"></script>
+</body>
+
+</html>
